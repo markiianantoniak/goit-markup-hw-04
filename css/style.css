@@ -25,6 +25,8 @@ body {
 
 .header {
   color: white;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   z-index: 10;
   border-bottom: 1px solid #e7e9fc;
   max-height: 72px;
@@ -38,6 +40,20 @@ body {
   padding: 0 15px;
 }
 
+#studio::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
+.contact-info .contacts-list li a.contact-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -74,6 +90,12 @@ body {
   padding: 24px 0;
   text-decoration: none;
   display: block;
+}
+
+#studio {
+  position: relative;
+  color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -125,6 +147,16 @@ body {
   background-color: #2e2f42;
   padding: 188px 0;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .order .container {
   width: 100%;

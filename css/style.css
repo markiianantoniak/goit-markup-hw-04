@@ -533,7 +533,7 @@ body {
   margin-bottom: 16px;
 }
 
-.icon {
+.footer .icon {
   width: 24px;
   height: 24px;
   fill: var(--icon-color, #f4f4fd);
